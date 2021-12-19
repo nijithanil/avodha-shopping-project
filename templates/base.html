@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>avodha shopping</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'hm/layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <h1><a href="/">avodha shopping</a></h1>
+      </div>
+      <!-- ################################################################################################ -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Home</a></li>
+              <li><a class="active" href="{% url 'cartdetails' %}">Cart<i class="fa fa-shopping-cart" style="font-size:20px"></i>{{itc}}</a></li>
+              <li><a class="active" href="accountsapp/register">Register</a></li>
+            {% if user.is_authenticated %}
+            <li> Hello {{user.username}}</li>
+              <li><a class="active" href="accountsapp/logout">Logout</a></li>
+            {% else %}
+              <li><a class="active" href="accountsapp/login">Login</a></li>
+            {% endif %}
+
+        </ul>
+      </nav>
+    </header>
+  </div>
+{% block content %}
+{% endblock %}
+</body>
+</html>
+
