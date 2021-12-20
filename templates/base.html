@@ -20,12 +20,12 @@
         <ul class="clear">
           <li class="active"><a href="/">Home</a></li>
               <li><a class="active" href="{% url 'cartdetails' %}">Cart<i class="fa fa-shopping-cart" style="font-size:20px"></i>{{itc}}</a></li>
-              <li><a class="active" href="accountsapp/register">Register</a></li>
+              <li><a class="active" href="{% url 'register' %}">Register</a></li>
             {% if user.is_authenticated %}
             <li> Hello {{user.username}}</li>
-              <li><a class="active" href="accountsapp/logout">Logout</a></li>
+              <li><a class="active" href="{% url 'logout' %}">Logout</a></li>
             {% else %}
-              <li><a class="active" href="accountsapp/login">Login</a></li>
+              <li><a class="active" href="{% url 'login' %}">Login</a></li>
             {% endif %}
 
         </ul>
