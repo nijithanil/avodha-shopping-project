@@ -2,9 +2,7 @@
 This is a E-commerce website. 
 (Filter option , search option , login , logout, register,cart option)
 
-![Uploading avodhashoppingproject.png…]()
-
-![Uploading avodhashoppingproject2.png…]()
+![avodhashoppingproject](https://user-images.githubusercontent.com/83776819/169502773-ca0b3f45-cfa6-4c5e-af74-eb05b376707c.png)
 
 
-![avodhashoppingproject3](https://user-images.githubusercontent.com/83776819/169502621-c99090fb-ca80-49c2-a948-df3eae151d8d.png)
+
