@@ -1,5 +1,5 @@
 # avodha-shopping-project
-This is a E-commerce website using django. 
+This is a Shopping site and its a E-commerce website its create by using django framework. 
 (Filter option , search option , login , logout, register,cart option)
 
 ![avodhashoppingproject](https://user-images.githubusercontent.com/83776819/169502773-ca0b3f45-cfa6-4c5e-af74-eb05b376707c.png)
